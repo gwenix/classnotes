@@ -20,4 +20,8 @@ Once you are done with changes, or just want to see your changes up on the site,
 
 git push -u origin master
 
+Later, to get the latest version of the files, issue:
+
+git pull
+
 Basics of git!
