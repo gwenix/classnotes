@@ -1,0 +1,24 @@
+One of the best things about git is how flexible it is. It lets you track what you want, and forget the rest.
+Your gitignore is a place where you list any files that you don't want git to track. These might be things
+you only need locally, or stuff that is private and shouldn't get pushed up to github.
+
+To add a gitignore I created a file labeled '.gitignore' (Dot important!), then ran 
+
+touch accident.md
+
+creating a fictitious file that we do not want in our commit. One of many ways of dealing with this is to
+list the file in the gitignore - think of it like a manifest. It tracks everything that SHOULDN'T be tracked.
+I edited gitignore to include one line:
+
+accident.md
+
+If you follow along these steps or pull down this repo with the gitignore inside, you could create a file called accident.md
+and would see it greyed out in your code editor, telling you it won't get tracked.
+
+This is one of the most useful tricks up your sleeve learning git! To be sure your gitignore stays up to date, be sure to run a
+
+git add .gitignore
+git commit -m "Updating gitignore"
+git push <branches as appropriate>
+
+Happy Coding!
